@@ -1,8 +1,35 @@
-.venv/
-__pycache__/
-*.pyc
-.env
-.venv
-db.sqlite3
-*.log
+# .gitignore
 
+# Entorno virtual
+.venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos temporales y logs
+*.log
+*.pot
+*.pyc
+*.sqlite3
+
+# Archivos de entorno o configuración local
+.env
+.env.*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de VSCode
+.vscode/
+.idea/
+
+# Archivos de migraciones si querés mantener limpio el repo al principio
+*/migrations/*
+!*/migrations/__init__.py
+
+# Archivos de caché
+*.cache
+*.tmp
